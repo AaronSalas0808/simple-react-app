@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const loadProducts = async () => {
       const data = await fetchProducts();
-      setProducts(data);
+      setProducts(data.content);
       setLoading(false);
     };
     loadProducts();
